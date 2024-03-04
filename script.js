@@ -12,11 +12,11 @@ const userInputInHTML = (input) => {
     const p = document.getElementById("pleaseNo");
 
     // Bad
-    p.innerHTML = input;
+    // p.innerHTML = input;
 
     // Better
-    // var textNode = document.createTextNode(input);
-    // p.appendChild(textNode);
+    var textNode = document.createTextNode(input);
+    p.appendChild(textNode);
 };
 
 const sendToServer = () => {
